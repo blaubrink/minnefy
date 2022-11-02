@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+    hyphens: auto;
+}
+
+body {
+    font-family: sans-serif;
+    color: #1f1f1f;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+em {
+    font-style: italic;
+}
+
+#container {
+    width: 90%;
+    max-width: 800px;
+    margin: 4rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+#btn-info {
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-weight: 700;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+
+#radio-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+#select-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 2rem;
+}
+
+#select-voice {
+    flex-grow: 1;
+    border: 1px solid #1f1f1f;
+    border-radius: 4px;
+}
+
+span {
+    font-weight: 700;
+}
+
+#btn-minnefy {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #1f1f1f;
+    border-radius: 4px;
+}
+
+#btn-minnefy:disabled {
+    background-color: #bfbfbf;
+    cursor: not-allowed;
+}
+
+#info-modal {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-container {
+    width: 90%;
+    max-width: 800px;
+}
+
+#btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    color: white;
+    font-weight: 700;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+
+#output-container {
+    display: none;
+    padding: 2rem;
+    border-radius: 4px;
+    background-color: #ffefdf;
+}
+
+.text-output {
+    font-family: serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#music-source {
+    font-size: 0.5rem;
+    text-align: center;
+}
